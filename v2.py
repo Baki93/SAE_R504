@@ -50,7 +50,7 @@ class Personnage:
         self.defense += 5
         self.esquive += 10
 
-    def ameliorer_caracteristique(self):
+    def ameliorer_caracteristique(self,choix):
         print(f"Caractéristiques de {self.nom}:")
         print(f"1. Points de vie: {self.points_de_vie}")
         print(f"2. Endurance: {self.endurance}")
