@@ -1,5 +1,8 @@
 #!/bin/python
 
+import subprocess	
+
+
 def afficher_menu():
 	print("One vs One Tournament")
 	print("1. Start")
@@ -8,6 +11,8 @@ def afficher_menu():
 
 def commencer_partie():
 	print("La partie commence !")
+	#Execution de v2.py
+	subprocess.run(["python", "v2.py"])
 
 def credit():
 	print("Jeu de combat tour par tour en un contre un. Le système est facile a comprendre donc pas de tuto")
