@@ -32,7 +32,7 @@ class Personnage:
             print(f"{adversaire.nom} esquive l'attaque de {self.nom} !")
         else:
             degats -= adversaire.defense 
-            adversaire.points_de_vie -= degats
+            adversaire.points_de_vie = degats
             print(f"{self.nom} attaque {adversaire.nom} et lui inflige {degats} points de dégâts.")
 
     def utiliser_sort(self, adversaire, choix_sort):
