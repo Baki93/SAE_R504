@@ -22,20 +22,20 @@ class TestPersonnageMethods(unittest.TestCase):
 
     def test_se_defendre(self):
         personnage = Personnage("Test", 100, 20, 30, 10)
-        defense_initiale = personnage.defense
-        esquive_initiale = personnage.esquive
+        defenseDuPersonnage = personnage.defense
+        esquiveDuPersonnage = personnage.esquive
 
         personnage.se_defendre()
-        self.assertEqual(personnage.defense, defense_initiale + 5)
-        self.assertEqual(personnage.esquive, esquive_initiale + 10)
+        self.assertEqual(personnage.defense, defenseDuPersonnage + 5)
+        self.assertEqual(personnage.esquive, esquiveDuPersonnage + 10)
 
     def test_ameliorer_caracteristique(self):
         personnage = Personnage("Test", 100, 20, 30, 10)
-        points_de_vie_initiaux = personnage.points_de_vie
+        pointsDeVie = personnage.points_de_vie
 
         with patch('builtins.input', return_value='1'):
             personnage.ameliorer_caracteristique(1)
-            self.assertEqual(personnage.points_de_vie, points_de_vie_initiaux + 20)
+            self.assertEqual(personnage.points_de_vie, pointsDeVie + 20)
 
 if __name__ == '__main__':
     unittest.main()
