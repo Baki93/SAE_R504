@@ -16,7 +16,7 @@ def commencer_partie():
 
 def credit():
 	print("Jeu de combat tour par tour en un contre un. Le système est facile a comprendre donc pas de tuto")
-	print("Auteur: Kamel UNIQUEMENT il a triché. Karl a servi a rien la vérité")
+	print("Auteur: Kamel UNIQUEMENT il a triché. Karl a servi a rien la vérité. Albert à bien contribué au projet ! On le remercie !")
 
 while True:
 	afficher_menu()
